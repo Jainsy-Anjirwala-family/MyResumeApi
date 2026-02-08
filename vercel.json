@@ -1,15 +1,13 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/index.cs",
-      "use": "vercel-dotnet"
+  "functions": {
+    "api/*.cs": {
+      "runtime": "vercel-dotnet@current"
     }
-  ],
-  "routes": [
+  },
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "api/index.cs"
+      "source": "/api/(.*)",
+      "destination": "/api/index.cs"
     }
   ]
 }
