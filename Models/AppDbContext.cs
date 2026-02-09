@@ -57,6 +57,8 @@ namespace MyResumeApi.Models
     // The DTO for your custom API response
     public class ProfileResponseDto
     {
+        public int Status { get; set; }
+        public bool Ok { get; set; }    
         public Persondetail PersonDetails { get; set; }
         // public List<Persondetail> PersonDetails { get; set; } = new();
         public List<Educationdetail> EducationDetails { get; set; } = new();
