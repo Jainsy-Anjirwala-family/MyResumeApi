@@ -197,8 +197,8 @@ namespace MyResumeApi.Controllers
 
                 var response = new ProfileResponseDto
                 {   
-                    status = "success",
-                    ok = true,
+                    Status = 200,
+                    Ok = true,
                     PersonDetails = personDetails,
                     EducationDetails = eduDetails,
                     TechnicalDetails = techDetails,
