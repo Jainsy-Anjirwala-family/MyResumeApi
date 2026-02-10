@@ -84,6 +84,7 @@ namespace MyResumeApi.Models
         public string company_name { get; set; } = "";
         public string job_title { get; set; } = "";
         public string year_id { get; set; } = "";
+        public string symbol_name { get; set; } = "";
         [NotMapped] // <--- ADD THIS LINE
         public List<string> description { get; set; } = new List<string>();
     }
