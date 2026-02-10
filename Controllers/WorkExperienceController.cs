@@ -178,6 +178,7 @@ namespace MyResumeApi.Controllers
                     company_name = exp.company_name,
                     job_title = exp.job_title,
                     year_id = exp.year_id,
+                    symbol_name = exp.symbol_name,
                     // Filter descriptions that belong to this specific job_title/work_id
                     description = experienceDes
                         .Where(d => d.job_description == exp.job_title) // Adjust 'job_title' to 'work_id' if that is your Foreign Key
